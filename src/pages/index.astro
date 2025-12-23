@@ -2,6 +2,29 @@
 import '../styles/global.css';
 ---
 
+<style>
+    .wave {
+        animation: wave 2s ease-in-out infinite;
+        display: inline-block;
+    }
+
+    .blink {
+        animation: blink 3s ease-in-out infinite;
+        display: inline-block;
+    }
+
+    @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(20deg); }
+        75% { transform: rotate(-10deg); }
+    }
+
+    @keyframes blink {
+        0%, 50%, 100% { transform: scaleY(1); }
+        25% { transform: scaleY(0.1); }
+    }
+</style>
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -12,8 +35,9 @@ import '../styles/global.css';
     </head>
     <body>
         <main>
-            <h1>Astro</h1>
-            <p>My blog!</p>
+            <h1><span class="wave">👋</span> Hi, I'm @GamerC0der</h1>
+            <p><span class="blink">👀</span> I'm interested in Coding, Gaming, AI, and more!</p>
+            <p>🌱 I'm currently learning React, Svelte, and NextJS.</p>
             <a href="/posts">See Posts</a>
         </main>
     </body>
