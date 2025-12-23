@@ -1,0 +1,9 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; background: #1a1a1a; color: #e0e0e0; }
+h1 { margin-bottom: 1rem; color: #fff; }
+a { color: #66b3ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; }
+li { margin-bottom: 1rem; }
+article { margin-top: 2rem; }
+time { color: #999; }
