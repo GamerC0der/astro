@@ -70,3 +70,34 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <div style="text-align: center; margin: 20px 0; font-weight: bold;">Winner: Cursor</div>
+
+Favorite Models
+
+<div style="background-color: #1a1a1a; padding: 20px; border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
+  <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">1</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">Grok Code Fast 1</span>
+  </div>
+  <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">2</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">Auto</span>
+  </div>
+  <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">3</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">Code Supernova</span>
+  </div>
+  <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">4</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">GPT 4.1</span>
+  </div>
+  <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #2a2a2a;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">5</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">Claude 4 Sonnet</span>
+  </div>
+  <div style="display: flex; align-items: center; padding: 12px 0;">
+    <span style="color: #888; font-size: 14px; width: 30px; flex-shrink: 0;">6</span>
+    <span style="color: white; font-size: 18px; font-weight: 500; flex: 1;">GPT 5</span>
+  </div>
+</div>
+
+<p style="margin-top: 20px; color: #888; font-size: 14px;">I typically run Grok Code Fast 1 with at least 2 work trees on Cursor but sometimes even 4 for quick, cheap, simple edits.</p>
