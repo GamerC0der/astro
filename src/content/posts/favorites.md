@@ -149,3 +149,72 @@ document.addEventListener('DOMContentLoaded', function() {
     <i class="devicon-github-plain" style="font-size: 3em; margin-top: 10px; cursor: pointer;"></i>
   </a>
 </div>
+
+Most Used OS
+
+<canvas id="osChart" width="300" height="300" style="max-width: 100%; margin: 20px auto; display: block;"></canvas>
+
+<div id="osMessage" style="text-align: center; margin: 20px 0; font-style: italic; color: #666;"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const osCtx = document.getElementById('osChart').getContext('2d');
+  new Chart(osCtx, {
+    type: 'pie',
+    data: {
+      labels: ['MacOS', 'Windows', 'Linux'],
+      datasets: [{
+        data: [82, 16, 2],
+        backgroundColor: [
+          '#C0C0C0',
+          '#0078D4',
+          '#4CAF50'
+        ],
+        borderColor: [
+          '#A0A0A0',
+          '#005A9E',
+          '#388E3C'
+        ],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            padding: 20,
+            usePointStyle: true
+          }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              return context.label + ': ' + context.parsed + '%';
+            }
+          }
+        }
+      }
+    }
+  });
+
+  const osMessage = document.getElementById('osMessage');
+  const userAgent = navigator.userAgent || navigator.platform;
+  let userOS = 'Unknown';
+
+  if (userAgent.indexOf('Mac') !== -1) {
+    userOS = 'MacOS';
+  } else if (userAgent.indexOf('Win') !== -1) {
+    userOS = 'Windows';
+  } else if (userAgent.indexOf('Linux') !== -1) {
+    userOS = 'Linux';
+  }
+
+  if (userOS === 'MacOS') {
+    osMessage.textContent = 'I see you use MacOS too!';
+  } else {
+    osMessage.textContent = `I see you're on ${userOS} but I'm on MacOS!`;
+  }
+});
+</script>
