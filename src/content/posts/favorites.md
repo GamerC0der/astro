@@ -218,3 +218,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+
+<style>
+  body {
+    margin-bottom: 10vh;
+    padding-bottom: 20px;
+  }
+</style>
+
+<div style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 1000;">
+  <button onclick="window.location.href='/'" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 24px; border-radius: 6px; font-size: 16px; cursor: pointer;">Back</button>
+</div>
