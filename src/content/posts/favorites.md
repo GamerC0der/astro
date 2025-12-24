@@ -125,6 +125,21 @@ document.addEventListener('DOMContentLoaded', function() {
     percentageElement.textContent = Math.round(currentPercentage);
   }, 50);
 
+  const commitsElement = document.getElementById('commitsCount');
+  let currentCommits = 0;
+  const targetCommits = 1800;
+  const commitsDuration = 1250;
+  const commitsIncrement = targetCommits / (commitsDuration / 50);
+
+  const commitsTimer = setInterval(() => {
+    currentCommits += commitsIncrement;
+    if (currentCommits >= targetCommits) {
+      currentCommits = targetCommits;
+      clearInterval(commitsTimer);
+    }
+    commitsElement.textContent = Math.round(currentCommits);
+  }, 50);
+
   const modelItems = document.querySelectorAll('.model-item');
   modelItems.forEach((item, index) => {
     setTimeout(() => {
@@ -143,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div style="text-align: center; margin: 40px 0;">
   <div style="font-size: 2em; font-weight: bold;">
-    Over 1800 commits yearly.
+    Over <span id="commitsCount">0</span> commits yearly.
   </div>
   <a href="https://github.com/gamerc0der" target="_blank" style="text-decoration: none; color: inherit;">
     <i class="devicon-github-plain" style="font-size: 3em; margin-top: 10px; cursor: pointer;"></i>
