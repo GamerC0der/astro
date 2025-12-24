@@ -101,7 +101,7 @@ Favorite Models
   </div>
 </div>
 
-<p style="margin-top: 20px; color: #888; font-size: 14px;">I typically run Grok Code Fast 1 with at least 2 work trees on Cursor but sometimes even 4 for quick, cheap, simple edits.</p>
+<p style="margin-top: 20px; color: #888; font-size: 14px;">I typically run Grok Code Fast 1 with at least 2 work trees on Cursor for quick, cheap, simple edits.</p>
 
 <br>
 Most Used Language
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
         tooltip: {
           callbacks: {
             label: function(context) {
-              return context.label + ': ' + context.parsed + '%';
+              return context.label;
             }
           }
         }
