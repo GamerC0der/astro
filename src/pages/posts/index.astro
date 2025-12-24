@@ -15,6 +15,7 @@ const posts = await getCollection('posts');
     </head>
     <body>
         <main>
+            <a href="/" style="display: inline-block; margin-bottom: 0.25rem; color: white; text-decoration: none;">← Back</a>
             <h1>Posts</h1>
             <ul>
                 {posts.map((post) => (
@@ -24,6 +25,7 @@ const posts = await getCollection('posts');
                     </li>
                 ))}
             </ul>
+            <p style="text-align: center; color: #888;">More blog posts coming soon!</p>
         </main>
     </body>
 </html>
