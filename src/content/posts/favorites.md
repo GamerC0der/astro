@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <hr style="border: none; height: 2px; background: linear-gradient(to right, transparent, #333, transparent); margin: 30px 0;">
 
-<img src="/src/content/posts/image.png" alt="Image" style="display: block; margin: 0 auto 20px auto; max-width: 100%; height: auto; border-radius: 1%;">
+<img src="https://files.catbox.moe/6q5d79.png" alt="Image" style="display: block; margin: 0 auto 20px auto; max-width: 100%; height: auto; border-radius: 1%;">
 
 <div style="text-align: center; margin: 40px 0;">
   <div style="font-size: 2em; font-weight: bold;">
